@@ -1,0 +1,59 @@
+header {
+  background-color: transparent;
+}
+
+.logo {
+  width: 10%;
+}
+
+.navigation-bar {
+  display: flex;
+  width: 100%;
+}
+
+.navigation-bar .header-button {
+  background-color: transparent;
+  border: none;
+  font-family: inherit;
+  color: inherit;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.navigation-bar .header-button img {
+  width: 1.5rem;
+}
+
+.navigation-bar .header-button span {
+  margin-left: 5px;
+}
+
+.katalog-button {
+  width: 15%;
+  display: flex;
+  justify-content: center;
+}
+
+.blog-contacts {
+  width: 40%;
+  display: flex;
+  justify-content: center;
+}
+
+.search-button {
+  width: 10%;
+  justify-content: end;
+}
+
+.heart-profile-cart {
+  display: flex;
+  width: 25%;
+  justify-content: end;
+  padding-right: 4%;
+}
+
+.heart-profile-cart .header-button {
+  margin-left: 7px;
+}
