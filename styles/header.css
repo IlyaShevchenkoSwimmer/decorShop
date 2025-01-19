@@ -1,9 +1,13 @@
 header {
   background-color: transparent;
+  position: absolute;
+  left: 3%;
+  top: 4dvh;
+  width: 98%;
 }
 
 .logo {
-  width: 10%;
+  width: 8%;
 }
 
 .navigation-bar {
@@ -31,20 +35,24 @@ header {
 }
 
 .katalog-button {
-  width: 15%;
+  width: 17%;
   display: flex;
   justify-content: center;
 }
 
 .blog-contacts {
+  position: relative;
+  right: -1%;
   width: 40%;
   display: flex;
   justify-content: center;
 }
 
 .search-button {
+  position: relative;
   width: 10%;
   justify-content: end;
+  right: -1%;
 }
 
 .heart-profile-cart {
