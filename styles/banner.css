@@ -22,7 +22,8 @@
 }
 
 .banner-card h2 {
-  font-family: "Lamiran";
+  font-family: "Floreste";
+  font-weight: 200;
   font-size: 3rem;
   color: rgba(255, 255, 255, 0.3);
   text-align: center;
@@ -51,7 +52,8 @@
 }
 
 .banner-card-price {
-  font-family: "MySpooky";
+  font-family: "Floreste";
+  font-weight: 200;
   text-align: center;
   margin: 20px auto;
 }

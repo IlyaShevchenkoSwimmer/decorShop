@@ -13,3 +13,8 @@ body {
   font-family: "Lamiran";
   src: url("../public/fonts/Lamiran.ttf");
 }
+
+@font-face {
+  font-family: "Floreste";
+  src: url("../public/fonts/FloresteWavy.otf");
+}
