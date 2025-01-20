@@ -3,3 +3,13 @@ body {
   font-family: Geneva, Arial, Helvetica, sans-serif;
   color: white;
 }
+
+@font-face {
+  font-family: "MySpooky";
+  src: url("../public/fonts/UnknowRegular-JRMLa.ttf");
+}
+
+@font-face {
+  font-family: "Lamiran";
+  src: url("../public/fonts/Lamiran.ttf");
+}
