@@ -3,22 +3,36 @@
   height: 95dvh;
   display: flex;
   justify-content: space-evenly;
+  gap: 1%;
 }
 
 .banner-card {
   position: relative;
-  width: 32%;
+  flex: 1;
   border-radius: 30px;
+  transition: all 0.5s ease-in-out;
 }
 
 .banner-card-img {
   max-width: 72%;
   position: absolute;
-  top: 18dvh;
+  top: 15dvh;
   left: 14%;
   transform: rotate(7deg);
   -webkit-filter: drop-shadow(0 0 60px rgba(0, 0, 0, 0.3));
   filter: drop-shadow(0 0 60px rgba(0, 0, 0, 0.3));
+  transition: all 0.5s ease-in-out;
+}
+
+.banner-card h4 {
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+}
+
+.banner-card .buy-button {
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
 }
 
 .banner-card h2 {
@@ -29,7 +43,8 @@
   text-align: center;
   margin: 0;
   padding: 0;
-  margin-top: 38dvh;
+  margin-top: 35dvh;
+  transition: all 0.5s ease-in-out;
 }
 
 .banner-card h3 {
@@ -38,6 +53,7 @@
   margin: 0;
   padding: 0;
   margin-top: 20dvh;
+  transition: all 0.5s ease-in-out;
 }
 
 .banner-card p {
@@ -49,6 +65,7 @@
   width: fit-content;
   padding-bottom: 20px;
   margin-top: 15px;
+  transition: all 0.5s ease-in-out;
 }
 
 .banner-card-price {
@@ -56,6 +73,14 @@
   font-weight: 200;
   text-align: center;
   margin: 20px auto;
+  transition: all 0.5s ease-in-out;
+}
+
+.banner-card-price::after {
+  content: "₽";
+  font-family: "EuclidRegular";
+  font-size: 1rem;
+  padding-left: 2px;
 }
 
 .banner-card-price img {
@@ -72,4 +97,152 @@
 
 .banner-table {
   background-color: rgb(174, 207, 255);
+}
+
+.banner-card-active {
+  flex: 3;
+}
+
+.banner-card-active .banner-card-img {
+  z-index: 10;
+  transform: rotate(0);
+  top: 13dvh;
+  max-width: 64%;
+  left: 18%;
+}
+
+.banner-card-active h2 {
+  font-family: "Floreste";
+  font-weight: 200;
+  width: 84%;
+  font-size: 7.5vw;
+  color: rgba(255, 255, 255, 0.3);
+  text-align: center;
+  margin: 0 auto;
+  padding: 0;
+  margin-top: 38dvh;
+}
+
+.banner-card-active h4 {
+  visibility: visible;
+  opacity: 1;
+  font-family: inherit;
+  color: rgb(218, 255, 90);
+  position: relative;
+  top: 34dvh;
+  left: 8%;
+}
+
+.banner-card-active h3 {
+  font-size: 0.9rem;
+  width: fit-content;
+  margin: 0 8%;
+  padding: 0;
+  margin-top: 5dvh;
+}
+
+.banner-card-active p {
+  font-size: 0.7rem;
+  text-align: left;
+  margin: 0 8%;
+  line-height: 1.2rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  width: fit-content;
+  padding-bottom: 20px;
+  margin-top: 15px;
+}
+
+.banner-card-active .banner-card-price {
+  text-align: left;
+  margin: 20px 8%;
+  font-size: 1.5rem;
+  color: rgb(218, 255, 90);
+}
+
+.banner-card-active .banner-card-price::after {
+  content: "₽";
+  font-family: "EuclidRegular";
+  font-size: 1rem;
+  padding-left: 2px;
+}
+
+.banner-card-active .banner-card-price img {
+  width: 1.2rem;
+}
+
+.banner-card-active .buy-button {
+  opacity: 1;
+  position: absolute;
+  top: 73dvh;
+  right: 8%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 27%;
+  height: 10dvh;
+  border-radius: 50%;
+  border: 1px solid rgb(218, 255, 90);
+}
+
+.banner-card-active .buy-button::after {
+  content: "";
+  background-color: rgba(255, 255, 255, 0.2);
+  width: 100%;
+  height: 10dvh;
+  position: absolute;
+  z-index: 10;
+  border-radius: 50%;
+  border: 1px solid rgb(218, 255, 90);
+  transform: rotate(-13deg);
+  transition: all 0.5s ease-in-out;
+}
+
+.banner-card-active .buy-button:hover::after {
+  transform: rotate(0deg);
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.buy-button img {
+  opacity: 0;
+}
+
+.banner-card-active .buy-button img {
+  opacity: 1;
+  width: 1.2rem;
+  transition: all 0.5s ease-in-out;
+}
+
+.buy-button span {
+  opacity: 0;
+}
+
+.banner-card-active .buy-button span {
+  opacity: 1;
+  transition: all 0.5s ease-in-out;
+}
+
+.banner-card-inactive {
+  flex: 1;
+}
+
+.banner-card-inactive h2 {
+  opacity: 0;
+  font-family: "Floreste";
+  font-weight: 200;
+  width: 84%;
+  font-size: 3vw;
+  color: rgba(255, 255, 255, 0.3);
+  text-align: center;
+  margin: 0 auto;
+  padding: 0;
+  margin-top: 38dvh;
+}
+
+.banner-card-inactive .banner-card-price {
+  opacity: 0;
+}
+
+.banner-card-inactive .banner-card-img {
+  top: 30dvh;
 }

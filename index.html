@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="./styles/index.css" />
     <link rel="stylesheet" href="./styles/header.css" />
     <link rel="stylesheet" href="./styles/banner.css" />
+    <script defer src="./scripts/banner.js"></script>
     <script defer src="./scripts/index.js"></script>
     <title>Decor Shop</title>
   </head>
@@ -41,7 +42,8 @@
       </nav>
     </header>
     <section class="banner">
-      <article class="banner-card banner-lamp">
+      <article class="banner-card banner-lamp banner-card-active">
+        <h4>ТОВАР ДНЯ</h4>
         <h2>BENJAMIN MOORE</h2>
         <img
           src="./public/banner/lamp.png"
@@ -53,11 +55,14 @@
           Функциональная дизайнерская <br />лампа для создания максимально
           <br />комфортного освещения
         </p>
-        <div class="banner-card-price">
-          150 000<img src="./public/ruble.png" alt="rubles" />
+        <div class="banner-card-price">150 000</div>
+        <div class="buy-button">
+          <img src="./public/header/cart.png" alt="cart" />
+          <span>Купить</span>
         </div>
       </article>
-      <article class="banner-card banner-chair">
+      <article class="banner-card banner-chair banner-card-inactive">
+        <h4>ТОВАР ДНЯ</h4>
         <img
           src="./public/banner/chair.png"
           alt="chair"
@@ -69,11 +74,14 @@
           Функциональное дизайнерское <br />кресло для создания максимально
           <br />комфортных условий
         </p>
-        <div class="banner-card-price">
-          150 000<img src="./public/ruble.png" alt="rubles" />
+        <div class="banner-card-price">150 000</div>
+        <div class="buy-button">
+          <img src="./public/header/cart.png" alt="cart" />
+          <span>Купить</span>
         </div>
       </article>
-      <article class="banner-card banner-table">
+      <article class="banner-card banner-table banner-card-inactive">
+        <h4>ТОВАР ДНЯ</h4>
         <img
           src="./public/banner/table.png"
           alt="table"
@@ -85,8 +93,10 @@
           Функциональный дизайнерский <br />стол для создания максимально
           <br />комфортных условий
         </p>
-        <div class="banner-card-price">
-          150 000<img src="./public/ruble.png" alt="rubles" />
+        <div class="banner-card-price">150 000</div>
+        <div class="buy-button">
+          <img src="./public/header/cart.png" alt="cart" />
+          <span>Купить</span>
         </div>
       </article>
     </section>
