@@ -6,7 +6,9 @@
     <link rel="stylesheet" href="./styles/index.css" />
     <link rel="stylesheet" href="./styles/header.css" />
     <link rel="stylesheet" href="./styles/banner.css" />
+    <link rel="stylesheet" href="./styles/categories.css" />
     <script defer src="./scripts/banner.js"></script>
+    <script defer src="./scripts/categories.js"></script>
     <script defer src="./scripts/index.js"></script>
     <title>Decor Shop</title>
   </head>
@@ -37,7 +39,6 @@
           </button>
           <button class="header-button cart-button">
             <img src="./public/header/cart.png" alt="cart" />
-            <div class="bought-number">0</div>
           </button>
         </div>
       </nav>
@@ -98,6 +99,110 @@
         <div class="buy-button">
           <img src="./public/header/cart.png" alt="cart" />
           <span>Купить</span>
+        </div>
+      </article>
+    </section>
+    <section class="categories">
+      <h2>КАТЕГОРИИ</h2>
+      <div class="categories-container">
+        <article class="category">
+          <h3>НАПОЛЬНЫЕ <br />ЗЕРКАЛА</h3>
+          <img
+            src="./public/categories/Subtract.png"
+            alt="substract"
+            class="substract"
+          />
+          <img
+            src="./public/categories/made-for-order.png"
+            alt="order"
+            class="made-for-order"
+          />
+          <img
+            src="./public/categories/category-mirror.png"
+            alt="mirrors"
+            class="category-img"
+          />
+          <div class="amount"><span>4</span>шт</div>
+          <button class="open-category"><span>&#8595;</span></button>
+        </article>
+        <article class="category">
+          <h3>ТОРШЕРЫ <br />И ЛАМПЫ</h3>
+          <img
+            src="./public/categories/Subtract.png"
+            alt="substract"
+            class="substract"
+          />
+          <img
+            src="./public/categories/made-for-order.png"
+            alt="order"
+            class="made-for-order"
+          />
+          <img
+            src="./public/categories/category-lamp.png"
+            alt="lamps"
+            class="category-img"
+          />
+          <div class="amount"><span>4</span>шт</div>
+          <button class="open-category"><span>&#8595;</span></button>
+        </article>
+        <article class="category">
+          <h3>КРЕСЛА <br />И СТУЛЬЯ</h3>
+          <img
+            src="./public/categories/Subtract.png"
+            alt="substract"
+            class="substract"
+          />
+          <img
+            src="./public/categories/made-for-order.png"
+            alt="order"
+            class="made-for-order"
+          />
+          <img
+            src="./public/categories/category-chair.png"
+            alt="chairs"
+            class="category-img"
+          />
+          <div class="amount"><span>4</span>шт</div>
+          <button class="open-category"><span>&#8595;</span></button>
+        </article>
+        <article class="category">
+          <h3>СТОЛЫ <br />И ТУМБЫ</h3>
+          <img
+            src="./public/categories/Subtract.png"
+            alt="substract"
+            class="substract"
+          />
+          <img
+            src="./public/categories/made-for-order.png"
+            alt="order"
+            class="made-for-order"
+          />
+          <img
+            src="./public/categories/category-table.png"
+            alt="tables"
+            class="category-img"
+          />
+          <div class="amount"><span>4</span>шт</div>
+          <button class="open-category"><span>&#8595;</span></button>
+        </article>
+      </div>
+    </section>
+    <section class="all-category-goods">
+      <article class="all-category-item category-lamp">
+        <div class="color-of-item"></div>
+        <img
+          src="./public/categories/lamps/lamp1.png"
+          alt="lamp1"
+          class="all-category-item-img"
+        />
+        <h3 class="item-name">ITEM NAME</h3>
+        <p class="category-name">Лампа</p>
+        <div class="price-buy-wrapper">
+          <span class="item-price">150 000</span>
+          <button class="item-buy-button">
+            <img src="./public/header/cart.png" alt="cart" />
+            <span>Купить</span>
+          </button>
         </div>
       </article>
     </section>

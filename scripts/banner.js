@@ -12,12 +12,6 @@ banners.forEach((banner) => {
     banner.classList.add("banner-card-active");
   });
   banner.children[6].addEventListener("click", () => {
-    setTimeout(() => {
-      const boughtNumber = document.querySelector(".bought-number");
-      const alreadyBought = Number(boughtNumber.innerHTML);
-      boughtNumber.innerHTML = `${alreadyBought + 1}`;
-      boughtNumber.style.opacity = "1";
-    }, 500);
     const cart = document
       .getElementsByClassName("cart-button")[0]
       .getBoundingClientRect();
