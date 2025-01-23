@@ -103,16 +103,20 @@
 
 .all-category-goods {
   outline: 1px solid red;
-  height: 350px;
+  height: 300px;
   width: 90%;
   position: relative;
   left: 5%;
   top: 20px;
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
+  overflow: hidden;
+  gap: 30px;
 }
 
 .all-category-goods .all-category-item {
+  position: relative;
   outline: 1px solid red;
   width: 230px;
   display: flex;
@@ -188,4 +192,43 @@
   height: 10px;
   border: 3px solid white;
   border-radius: 50%;
+}
+
+.load-more-goods {
+  position: relative;
+  font-family: "EuclidRegular";
+  color: white;
+  border: none;
+  background-color: transparent;
+  display: block;
+  padding: 0;
+  margin: 0 auto;
+  margin-top: 100px;
+  width: 200px;
+  height: 80px;
+  border-radius: 50%;
+}
+
+.load-more-goods::after {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: 0;
+  width: 200px;
+  height: 80px;
+  border-radius: 50%;
+  border: 1px solid rgb(218, 255, 90);
+  transform: rotate(-13deg);
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.2);
+  transition: background-color 0.3s ease-in-out;
+}
+
+.load-more-goods:hover::after {
+  background-color: rgba(255, 255, 255, 0);
+}
+
+.load-more-goods span {
+  font-size: 1.2rem;
+  color: rgb(218, 255, 90);
 }
