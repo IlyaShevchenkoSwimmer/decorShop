@@ -7,8 +7,10 @@
     <link rel="stylesheet" href="./styles/header.css" />
     <link rel="stylesheet" href="./styles/banner.css" />
     <link rel="stylesheet" href="./styles/categories.css" />
+    <link rel="stylesheet" href="./styles/blog.css" />
     <script defer src="./scripts/banner.js"></script>
     <script defer src="./scripts/categories.js"></script>
+    <script defer src="./scripts/blog.js"></script>
     <script defer src="./scripts/index.js"></script>
     <title>Decor Shop</title>
   </head>
@@ -43,290 +45,503 @@
         </div>
       </nav>
     </header>
-    <section class="banner">
-      <article class="banner-card banner-lamp banner-card-active">
-        <h4>ТОВАР ДНЯ</h4>
-        <h2>BENJAMIN MOORE</h2>
-        <img
-          src="./public/banner/lamp.png"
-          alt="lamp"
-          class="banner-card-img"
-        />
-        <h3>CВЕТИЛЬНИК</h3>
-        <p>
-          Функциональная дизайнерская <br />лампа для создания максимально
-          <br />комфортного освещения
-        </p>
-        <div class="banner-card-price">150 000</div>
-        <div class="buy-button">
-          <img src="./public/header/cart.png" alt="cart" />
-          <span>Купить</span>
+    <main>
+      <section class="banner">
+        <article class="banner-card banner-lamp banner-card-active">
+          <h4>ТОВАР ДНЯ</h4>
+          <h2>BENJAMIN MOORE</h2>
+          <img
+            src="./public/banner/lamp.png"
+            alt="lamp"
+            class="banner-card-img"
+          />
+          <h3>CВЕТИЛЬНИК</h3>
+          <p>
+            Функциональная дизайнерская <br />лампа для создания максимально
+            <br />комфортного освещения
+          </p>
+          <div class="banner-card-price">150 000</div>
+          <div class="buy-button">
+            <img src="./public/header/cart.png" alt="cart" />
+            <span>Купить</span>
+          </div>
+        </article>
+        <article class="banner-card banner-chair banner-card-inactive">
+          <h4>ТОВАР ДНЯ</h4>
+          <h2>PAINT HERE GLORY</h2>
+          <img
+            src="./public/banner/chair.png"
+            alt="chair"
+            class="banner-card-img"
+          />
+          <h3>КРЕСЛО</h3>
+          <p>
+            Функциональное дизайнерское <br />кресло для создания максимально
+            <br />комфортных условий
+          </p>
+          <div class="banner-card-price">150 000</div>
+          <div class="buy-button">
+            <img src="./public/header/cart.png" alt="cart" />
+            <span>Купить</span>
+          </div>
+        </article>
+        <article class="banner-card banner-table banner-card-inactive">
+          <h4>ТОВАР ДНЯ</h4>
+          <h2>BENJAMIN MOORE</h2>
+          <img
+            src="./public/banner/table.png"
+            alt="table"
+            class="banner-card-img"
+          />
+          <h3>CТОЛ</h3>
+          <p>
+            Функциональный дизайнерский <br />стол для создания максимально
+            <br />комфортных условий
+          </p>
+          <div class="banner-card-price">150 000</div>
+          <div class="buy-button">
+            <img src="./public/header/cart.png" alt="cart" />
+            <span>Купить</span>
+          </div>
+        </article>
+      </section>
+      <section class="categories">
+        <h2>КАТЕГОРИИ</h2>
+        <div class="categories-container">
+          <article class="category">
+            <h3>НАПОЛЬНЫЕ <br />ЗЕРКАЛА</h3>
+            <img
+              src="./public/categories/Subtract.png"
+              alt="substract"
+              class="substract"
+            />
+            <img
+              src="./public/categories/made-for-order.png"
+              alt="order"
+              class="made-for-order"
+            />
+            <img
+              src="./public/categories/category-mirror.png"
+              alt="mirrors"
+              class="category-img"
+            />
+            <div class="amount"><span>4</span>шт</div>
+            <button class="open-category"><span>&#8595;</span></button>
+          </article>
+          <article class="category">
+            <h3>ТОРШЕРЫ <br />И ЛАМПЫ</h3>
+            <img
+              src="./public/categories/Subtract.png"
+              alt="substract"
+              class="substract"
+            />
+            <img
+              src="./public/categories/made-for-order.png"
+              alt="order"
+              class="made-for-order"
+            />
+            <img
+              src="./public/categories/category-lamp.png"
+              alt="lamps"
+              class="category-img"
+            />
+            <div class="amount"><span>4</span>шт</div>
+            <button class="open-category"><span>&#8595;</span></button>
+          </article>
+          <article class="category">
+            <h3>КРЕСЛА <br />И СТУЛЬЯ</h3>
+            <img
+              src="./public/categories/Subtract.png"
+              alt="substract"
+              class="substract"
+            />
+            <img
+              src="./public/categories/made-for-order.png"
+              alt="order"
+              class="made-for-order"
+            />
+            <img
+              src="./public/categories/category-chair.png"
+              alt="chairs"
+              class="category-img"
+            />
+            <div class="amount"><span>4</span>шт</div>
+            <button class="open-category"><span>&#8595;</span></button>
+          </article>
+          <article class="category">
+            <h3>СТОЛЫ <br />И ТУМБЫ</h3>
+            <img
+              src="./public/categories/Subtract.png"
+              alt="substract"
+              class="substract"
+            />
+            <img
+              src="./public/categories/made-for-order.png"
+              alt="order"
+              class="made-for-order"
+            />
+            <img
+              src="./public/categories/category-table.png"
+              alt="tables"
+              class="category-img"
+            />
+            <div class="amount"><span>4</span>шт</div>
+            <button class="open-category"><span>&#8595;</span></button>
+          </article>
         </div>
-      </article>
-      <article class="banner-card banner-chair banner-card-inactive">
-        <h4>ТОВАР ДНЯ</h4>
-        <h2>PAINT HERE GLORY</h2>
-        <img
-          src="./public/banner/chair.png"
-          alt="chair"
-          class="banner-card-img"
-        />
-        <h3>КРЕСЛО</h3>
-        <p>
-          Функциональное дизайнерское <br />кресло для создания максимально
-          <br />комфортных условий
-        </p>
-        <div class="banner-card-price">150 000</div>
-        <div class="buy-button">
-          <img src="./public/header/cart.png" alt="cart" />
-          <span>Купить</span>
-        </div>
-      </article>
-      <article class="banner-card banner-table banner-card-inactive">
-        <h4>ТОВАР ДНЯ</h4>
-        <h2>BENJAMIN MOORE</h2>
-        <img
-          src="./public/banner/table.png"
-          alt="table"
-          class="banner-card-img"
-        />
-        <h3>CТОЛ</h3>
-        <p>
-          Функциональный дизайнерский <br />стол для создания максимально
-          <br />комфортных условий
-        </p>
-        <div class="banner-card-price">150 000</div>
-        <div class="buy-button">
-          <img src="./public/header/cart.png" alt="cart" />
-          <span>Купить</span>
-        </div>
-      </article>
-    </section>
-    <section class="categories">
-      <h2>КАТЕГОРИИ</h2>
-      <div class="categories-container">
-        <article class="category">
-          <h3>НАПОЛЬНЫЕ <br />ЗЕРКАЛА</h3>
+      </section>
+      <section class="all-category-goods">
+        <article class="all-category-item category-lamp">
+          <div class="color-of-item"></div>
           <img
-            src="./public/categories/Subtract.png"
-            alt="substract"
-            class="substract"
+            src="./public/categories/lamps/lamp1.png"
+            alt="lamp1"
+            class="all-category-item-img"
           />
-          <img
-            src="./public/categories/made-for-order.png"
-            alt="order"
-            class="made-for-order"
-          />
-          <img
-            src="./public/categories/category-mirror.png"
-            alt="mirrors"
-            class="category-img"
-          />
-          <div class="amount"><span>4</span>шт</div>
-          <button class="open-category"><span>&#8595;</span></button>
+          <h3 class="item-name">ITEM NAME</h3>
+          <p class="category-name">Лампа</p>
+          <div class="price-buy-wrapper">
+            <span class="item-price">150 000</span>
+            <button class="item-buy-button">
+              <img src="./public/header/cart.png" alt="cart" />
+              <span>Купить</span>
+            </button>
+          </div>
         </article>
-        <article class="category">
-          <h3>ТОРШЕРЫ <br />И ЛАМПЫ</h3>
+        <article class="all-category-item category-lamp">
+          <div class="color-of-item"></div>
           <img
-            src="./public/categories/Subtract.png"
-            alt="substract"
-            class="substract"
+            src="./public/categories/lamps/lamp2.png"
+            alt="lamp2"
+            class="all-category-item-img"
           />
-          <img
-            src="./public/categories/made-for-order.png"
-            alt="order"
-            class="made-for-order"
-          />
-          <img
-            src="./public/categories/category-lamp.png"
-            alt="lamps"
-            class="category-img"
-          />
-          <div class="amount"><span>4</span>шт</div>
-          <button class="open-category"><span>&#8595;</span></button>
+          <h3 class="item-name">ITEM NAME</h3>
+          <p class="category-name">Лампа</p>
+          <div class="price-buy-wrapper">
+            <span class="item-price">150 000</span>
+            <button class="item-buy-button">
+              <img src="./public/header/cart.png" alt="cart" />
+              <span>Купить</span>
+            </button>
+          </div>
         </article>
-        <article class="category">
-          <h3>КРЕСЛА <br />И СТУЛЬЯ</h3>
+        <article class="all-category-item category-lamp">
+          <div class="color-of-item"></div>
           <img
-            src="./public/categories/Subtract.png"
-            alt="substract"
-            class="substract"
+            src="./public/categories/lamps/lamp3.png"
+            alt="lamp3"
+            class="all-category-item-img"
           />
-          <img
-            src="./public/categories/made-for-order.png"
-            alt="order"
-            class="made-for-order"
-          />
-          <img
-            src="./public/categories/category-chair.png"
-            alt="chairs"
-            class="category-img"
-          />
-          <div class="amount"><span>4</span>шт</div>
-          <button class="open-category"><span>&#8595;</span></button>
+          <h3 class="item-name">ITEM NAME</h3>
+          <p class="category-name">Лампа</p>
+          <div class="price-buy-wrapper">
+            <span class="item-price">150 000</span>
+            <button class="item-buy-button">
+              <img src="./public/header/cart.png" alt="cart" />
+              <span>Купить</span>
+            </button>
+          </div>
         </article>
-        <article class="category">
-          <h3>СТОЛЫ <br />И ТУМБЫ</h3>
+        <article class="all-category-item category-lamp">
+          <div class="color-of-item"></div>
           <img
-            src="./public/categories/Subtract.png"
-            alt="substract"
-            class="substract"
+            src="./public/categories/lamps/lamp4.png"
+            alt="lamp4"
+            class="all-category-item-img"
           />
-          <img
-            src="./public/categories/made-for-order.png"
-            alt="order"
-            class="made-for-order"
-          />
-          <img
-            src="./public/categories/category-table.png"
-            alt="tables"
-            class="category-img"
-          />
-          <div class="amount"><span>4</span>шт</div>
-          <button class="open-category"><span>&#8595;</span></button>
+          <h3 class="item-name">ITEM NAME</h3>
+          <p class="category-name">Лампа</p>
+          <div class="price-buy-wrapper">
+            <span class="item-price">150 000</span>
+            <button class="item-buy-button">
+              <img src="./public/header/cart.png" alt="cart" />
+              <span>Купить</span>
+            </button>
+          </div>
         </article>
+        <article class="all-category-item category-lamp">
+          <div class="color-of-item"></div>
+          <img
+            src="./public/categories/lamps/lamp5.png"
+            alt="lamp5"
+            class="all-category-item-img"
+          />
+          <h3 class="item-name">ITEM NAME</h3>
+          <p class="category-name">Лампа</p>
+          <div class="price-buy-wrapper">
+            <span class="item-price">150 000</span>
+            <button class="item-buy-button">
+              <img src="./public/header/cart.png" alt="cart" />
+              <span>Купить</span>
+            </button>
+          </div>
+        </article>
+        <article class="all-category-item category-chair">
+          <div class="color-of-item"></div>
+          <img
+            src="./public/categories/chairs/chair1.png"
+            alt="chair1"
+            class="all-category-item-img"
+          />
+          <h3 class="item-name">ITEM NAME</h3>
+          <p class="category-name">Стул</p>
+          <div class="price-buy-wrapper">
+            <span class="item-price">150 000</span>
+            <button class="item-buy-button">
+              <img src="./public/header/cart.png" alt="cart" />
+              <span>Купить</span>
+            </button>
+          </div>
+        </article>
+        <article class="all-category-item category-chair">
+          <div class="color-of-item"></div>
+          <img
+            src="./public/categories/chairs/chair2.png"
+            alt="chair2"
+            class="all-category-item-img"
+          />
+          <h3 class="item-name">ITEM NAME</h3>
+          <p class="category-name">Стул</p>
+          <div class="price-buy-wrapper">
+            <span class="item-price">150 000</span>
+            <button class="item-buy-button">
+              <img src="./public/header/cart.png" alt="cart" />
+              <span>Купить</span>
+            </button>
+          </div>
+        </article>
+        <article class="all-category-item category-chair">
+          <div class="color-of-item"></div>
+          <img
+            src="./public/categories/chairs/chair3.png"
+            alt="chair3"
+            class="all-category-item-img"
+          />
+          <h3 class="item-name">ITEM NAME</h3>
+          <p class="category-name">Стул</p>
+          <div class="price-buy-wrapper">
+            <span class="item-price">150 000</span>
+            <button class="item-buy-button">
+              <img src="./public/header/cart.png" alt="cart" />
+              <span>Купить</span>
+            </button>
+          </div>
+        </article>
+      </section>
+      <button class="load-more-goods">
+        Загрузить еще<br /><span>&#8595;</span>
+      </button>
+      <img
+        src="./public/creatingAGreatArt.png"
+        alt="creatingAGreatArt"
+        class="creatingAGreatArt"
+      />
+      <div class="blog-position">
+        <button class="scroll-blog active"></button>
+        <button class="scroll-blog"></button>
+        <button class="scroll-blog"></button>
+        <h1>БЛОГ</h1>
       </div>
-    </section>
-    <section class="all-category-goods">
-      <article class="all-category-item category-lamp">
-        <div class="color-of-item"></div>
-        <img
-          src="./public/categories/lamps/lamp1.png"
-          alt="lamp1"
-          class="all-category-item-img"
-        />
-        <h3 class="item-name">ITEM NAME</h3>
-        <p class="category-name">Лампа</p>
-        <div class="price-buy-wrapper">
-          <span class="item-price">150 000</span>
-          <button class="item-buy-button">
-            <img src="./public/header/cart.png" alt="cart" />
-            <span>Купить</span>
-          </button>
-        </div>
-      </article>
-      <article class="all-category-item category-lamp">
-        <div class="color-of-item"></div>
-        <img
-          src="./public/categories/lamps/lamp2.png"
-          alt="lamp2"
-          class="all-category-item-img"
-        />
-        <h3 class="item-name">ITEM NAME</h3>
-        <p class="category-name">Лампа</p>
-        <div class="price-buy-wrapper">
-          <span class="item-price">150 000</span>
-          <button class="item-buy-button">
-            <img src="./public/header/cart.png" alt="cart" />
-            <span>Купить</span>
-          </button>
-        </div>
-      </article>
-      <article class="all-category-item category-lamp">
-        <div class="color-of-item"></div>
-        <img
-          src="./public/categories/lamps/lamp3.png"
-          alt="lamp3"
-          class="all-category-item-img"
-        />
-        <h3 class="item-name">ITEM NAME</h3>
-        <p class="category-name">Лампа</p>
-        <div class="price-buy-wrapper">
-          <span class="item-price">150 000</span>
-          <button class="item-buy-button">
-            <img src="./public/header/cart.png" alt="cart" />
-            <span>Купить</span>
-          </button>
-        </div>
-      </article>
-      <article class="all-category-item category-lamp">
-        <div class="color-of-item"></div>
-        <img
-          src="./public/categories/lamps/lamp4.png"
-          alt="lamp4"
-          class="all-category-item-img"
-        />
-        <h3 class="item-name">ITEM NAME</h3>
-        <p class="category-name">Лампа</p>
-        <div class="price-buy-wrapper">
-          <span class="item-price">150 000</span>
-          <button class="item-buy-button">
-            <img src="./public/header/cart.png" alt="cart" />
-            <span>Купить</span>
-          </button>
-        </div>
-      </article>
-      <article class="all-category-item category-lamp">
-        <div class="color-of-item"></div>
-        <img
-          src="./public/categories/lamps/lamp5.png"
-          alt="lamp5"
-          class="all-category-item-img"
-        />
-        <h3 class="item-name">ITEM NAME</h3>
-        <p class="category-name">Лампа</p>
-        <div class="price-buy-wrapper">
-          <span class="item-price">150 000</span>
-          <button class="item-buy-button">
-            <img src="./public/header/cart.png" alt="cart" />
-            <span>Купить</span>
-          </button>
-        </div>
-      </article>
-      <article class="all-category-item category-chair">
-        <div class="color-of-item"></div>
-        <img
-          src="./public/categories/chairs/chair1.png"
-          alt="chair1"
-          class="all-category-item-img"
-        />
-        <h3 class="item-name">ITEM NAME</h3>
-        <p class="category-name">Стул</p>
-        <div class="price-buy-wrapper">
-          <span class="item-price">150 000</span>
-          <button class="item-buy-button">
-            <img src="./public/header/cart.png" alt="cart" />
-            <span>Купить</span>
-          </button>
-        </div>
-      </article>
-      <article class="all-category-item category-chair">
-        <div class="color-of-item"></div>
-        <img
-          src="./public/categories/chairs/chair2.png"
-          alt="chair2"
-          class="all-category-item-img"
-        />
-        <h3 class="item-name">ITEM NAME</h3>
-        <p class="category-name">Стул</p>
-        <div class="price-buy-wrapper">
-          <span class="item-price">150 000</span>
-          <button class="item-buy-button">
-            <img src="./public/header/cart.png" alt="cart" />
-            <span>Купить</span>
-          </button>
-        </div>
-      </article>
-      <article class="all-category-item category-chair">
-        <div class="color-of-item"></div>
-        <img
-          src="./public/categories/chairs/chair3.png"
-          alt="chair3"
-          class="all-category-item-img"
-        />
-        <h3 class="item-name">ITEM NAME</h3>
-        <p class="category-name">Стул</p>
-        <div class="price-buy-wrapper">
-          <span class="item-price">150 000</span>
-          <button class="item-buy-button">
-            <img src="./public/header/cart.png" alt="cart" />
-            <span>Купить</span>
-          </button>
-        </div>
-      </article>
-    </section>
-    <button class="load-more-goods">
-      Загрузить еще<br /><span>&#8595;</span>
-    </button>
+      <section class="blog">
+        <article class="blog-article">
+          <img
+            src="./public/blog/blog-form.png"
+            alt="blog-form"
+            class="blog-article-form"
+          />
+          <span class="article-id">01</span>
+          <h4 class="article-creator">Laura Busche</h4>
+          <h2 class="article-name">НОВАЯ КОЛЛЕКЦИЯ КРЕСЕЛ</h2>
+          <p class="article-date">14 января 2023</p>
+          <div class="reading-time">
+            <span>3</span>
+            <div>мин</div>
+          </div>
+          <div class="article-img-wrapper">
+            <img
+              src="./public/blog/sofa.png"
+              alt="sofa"
+              class="blog-article-img"
+            />
+          </div>
+        </article>
+        <article class="blog-article">
+          <img
+            src="./public/blog/blog-form.png"
+            alt="blog-form"
+            class="blog-article-form"
+          />
+          <span class="article-id">02</span>
+          <h4 class="article-creator">Laura Busche</h4>
+          <h2 class="article-name">НОВАЯ КОЛЛЕКЦИЯ КРЕСЕЛ</h2>
+          <p class="article-date">14 января 2023</p>
+          <div class="reading-time">
+            <span>3</span>
+            <div>мин</div>
+          </div>
+          <div class="article-img-wrapper">
+            <img
+              src="./public/blog/sofa.png"
+              alt="sofa"
+              class="blog-article-img"
+            />
+          </div>
+        </article>
+        <article class="blog-article">
+          <img
+            src="./public/blog/blog-form.png"
+            alt="blog-form"
+            class="blog-article-form"
+          />
+          <span class="article-id">03</span>
+          <h4 class="article-creator">Laura Busche</h4>
+          <h2 class="article-name">НОВАЯ КОЛЛЕКЦИЯ КРЕСЕЛ</h2>
+          <p class="article-date">14 января 2023</p>
+          <div class="reading-time">
+            <span>3</span>
+            <div>мин</div>
+          </div>
+          <div class="article-img-wrapper">
+            <img
+              src="./public/blog/sofa.png"
+              alt="sofa"
+              class="blog-article-img"
+            />
+          </div>
+        </article>
+        <article class="blog-article">
+          <img
+            src="./public/blog/blog-form.png"
+            alt="blog-form"
+            class="blog-article-form"
+          />
+          <span class="article-id">04</span>
+          <h4 class="article-creator">Laura Busche</h4>
+          <h2 class="article-name">НОВАЯ КОЛЛЕКЦИЯ КРЕСЕЛ</h2>
+          <p class="article-date">14 января 2023</p>
+          <div class="reading-time">
+            <span>3</span>
+            <div>мин</div>
+          </div>
+          <div class="article-img-wrapper">
+            <img
+              src="./public/blog/blog-lamp.png"
+              alt="sofa"
+              class="blog-article-img"
+            />
+          </div>
+        </article>
+        <article class="blog-article">
+          <img
+            src="./public/blog/blog-form.png"
+            alt="blog-form"
+            class="blog-article-form"
+          />
+          <span class="article-id">05</span>
+          <h4 class="article-creator">Laura Busche</h4>
+          <h2 class="article-name">НОВАЯ КОЛЛЕКЦИЯ КРЕСЕЛ</h2>
+          <p class="article-date">14 января 2023</p>
+          <div class="reading-time">
+            <span>3</span>
+            <div>мин</div>
+          </div>
+          <div class="article-img-wrapper">
+            <img
+              src="./public/blog/blog-lamp.png"
+              alt="sofa"
+              class="blog-article-img"
+            />
+          </div>
+        </article>
+        <article class="blog-article">
+          <img
+            src="./public/blog/blog-form.png"
+            alt="blog-form"
+            class="blog-article-form"
+          />
+          <span class="article-id">06</span>
+          <h4 class="article-creator">Laura Busche</h4>
+          <h2 class="article-name">НОВАЯ КОЛЛЕКЦИЯ КРЕСЕЛ</h2>
+          <p class="article-date">14 января 2023</p>
+          <div class="reading-time">
+            <span>3</span>
+            <div>мин</div>
+          </div>
+          <div class="article-img-wrapper">
+            <img
+              src="./public/blog/blog-lamp.png"
+              alt="sofa"
+              class="blog-article-img"
+            />
+          </div>
+        </article>
+        <article class="blog-article">
+          <img
+            src="./public/blog/blog-form.png"
+            alt="blog-form"
+            class="blog-article-form"
+          />
+          <span class="article-id">07</span>
+          <h4 class="article-creator">Laura Busche</h4>
+          <h2 class="article-name">НОВАЯ КОЛЛЕКЦИЯ КРЕСЕЛ</h2>
+          <p class="article-date">14 января 2023</p>
+          <div class="reading-time">
+            <span>3</span>
+            <div>мин</div>
+          </div>
+          <div class="article-img-wrapper">
+            <img
+              src="./public/blog/wardrobe.png"
+              alt="sofa"
+              class="blog-article-img"
+            />
+          </div>
+        </article>
+        <article class="blog-article">
+          <img
+            src="./public/blog/blog-form.png"
+            alt="blog-form"
+            class="blog-article-form"
+          />
+          <span class="article-id">08</span>
+          <h4 class="article-creator">Laura Busche</h4>
+          <h2 class="article-name">НОВАЯ КОЛЛЕКЦИЯ КРЕСЕЛ</h2>
+          <p class="article-date">14 января 2023</p>
+          <div class="reading-time">
+            <span>3</span>
+            <div>мин</div>
+          </div>
+          <div class="article-img-wrapper">
+            <img
+              src="./public/blog/wardrobe.png"
+              alt="sofa"
+              class="blog-article-img"
+            />
+          </div>
+        </article>
+        <article class="blog-article">
+          <img
+            src="./public/blog/blog-form.png"
+            alt="blog-form"
+            class="blog-article-form"
+          />
+          <span class="article-id">09</span>
+          <h4 class="article-creator">Laura Busche</h4>
+          <h2 class="article-name">НОВАЯ КОЛЛЕКЦИЯ КРЕСЕЛ</h2>
+          <p class="article-date">14 января 2023</p>
+          <div class="reading-time">
+            <span>3</span>
+            <div>мин</div>
+          </div>
+          <div class="article-img-wrapper">
+            <img
+              src="./public/blog/wardrobe.png"
+              alt="sofa"
+              class="blog-article-img"
+            />
+          </div>
+        </article>
+      </section>
+    </main>
   </body>
 </html>

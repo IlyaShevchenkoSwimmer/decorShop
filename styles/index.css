@@ -12,4 +12,11 @@ body {
   background-color: rgb(174, 151, 232);
   font-family: "EuclidRegular";
   color: white;
+  overflow-x: hidden;
+  max-width: 1450px;
+}
+
+.creatingAGreatArt {
+  width: 100%;
+  margin-top: 20px;
 }
