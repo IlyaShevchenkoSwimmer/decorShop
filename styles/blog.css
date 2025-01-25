@@ -1,10 +1,15 @@
 .blog {
   display: flex;
   transition: all 0.5s ease-in-out;
-  overflow-x: scroll;
-  scroll-snap-type: x mandatory;
   -ms-overflow-style: none;
   scrollbar-width: none;
+}
+
+.blog-container {
+  display: flex;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  gap: calc(1% / 3);
 }
 
 .blog::-webkit-scrollbar {
@@ -17,8 +22,6 @@
   cursor: pointer;
   width: 33%;
   min-width: 33%;
-  margin-right: calc(1% / 3);
-  scroll-snap-align: start;
 }
 
 .blog-article .blog-article-form {

@@ -19,3 +19,21 @@ body {
   width: 100%;
   margin-top: 20px;
 }
+
+.swiper {
+  width: 100%;
+}
+
+.swiper-slide {
+  flex-shrink: 100 !important;
+  width: 25%;
+  height: auto !important;
+}
+
+img {
+  -webkit-user-drag: none;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}

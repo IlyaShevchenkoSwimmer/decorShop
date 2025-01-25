@@ -8,9 +8,15 @@
     <link rel="stylesheet" href="./styles/banner.css" />
     <link rel="stylesheet" href="./styles/categories.css" />
     <link rel="stylesheet" href="./styles/blog.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script defer src="./scripts/banner.js"></script>
     <script defer src="./scripts/categories.js"></script>
     <script defer src="./scripts/blog.js"></script>
+    <script defer src="./scripts/index.js"></script>
     <title>Decor Shop</title>
   </head>
   <body>
@@ -110,9 +116,9 @@
           <div class="categories-slider-position"></div>
         </div>
       </div>
-      <section class="categories">
-        <div class="categories-container">
-          <article class="category">
+      <section class="swiper categories">
+        <div class="swiper-wrapper categories-container">
+          <article class="swiper-slide category">
             <h3>НАПОЛЬНЫЕ <br />ЗЕРКАЛА</h3>
             <img
               src="./public/categories/Subtract.png"
@@ -132,7 +138,7 @@
             <div class="amount"><span>4</span>шт</div>
             <button class="open-category"><span>&#8595;</span></button>
           </article>
-          <article class="category">
+          <article class="swiper-slide category">
             <h3>ТОРШЕРЫ <br />И ЛАМПЫ</h3>
             <img
               src="./public/categories/Subtract.png"
@@ -152,7 +158,7 @@
             <div class="amount"><span>4</span>шт</div>
             <button class="open-category"><span>&#8595;</span></button>
           </article>
-          <article class="category">
+          <article class="swiper-slide category">
             <h3>КРЕСЛА <br />И СТУЛЬЯ</h3>
             <img
               src="./public/categories/Subtract.png"
@@ -172,7 +178,7 @@
             <div class="amount"><span>4</span>шт</div>
             <button class="open-category"><span>&#8595;</span></button>
           </article>
-          <article class="category">
+          <article class="swiper-slide category">
             <h3>СТОЛЫ <br />И ТУМБЫ</h3>
             <img
               src="./public/categories/Subtract.png"
@@ -192,7 +198,7 @@
             <div class="amount"><span>4</span>шт</div>
             <button class="open-category"><span>&#8595;</span></button>
           </article>
-          <article class="category">
+          <article class="swiper-slide category">
             <h3>ТОРШЕРЫ <br />И ЛАМПЫ</h3>
             <img
               src="./public/categories/Subtract.png"
@@ -366,205 +372,207 @@
         </div>
         <h1>БЛОГ</h1>
       </div>
-      <section class="blog">
-        <article class="blog-article">
-          <img
-            src="./public/blog/blog-form.png"
-            alt="blog-form"
-            class="blog-article-form"
-          />
-          <span class="article-id">01</span>
-          <h4 class="article-creator">Laura Busche</h4>
-          <h2 class="article-name">НОВАЯ КОЛЛЕКЦИЯ КРЕСЕЛ</h2>
-          <p class="article-date">14 января 2023</p>
-          <div class="reading-time">
-            <span>3</span>
-            <div>мин</div>
-          </div>
-          <div class="article-img-wrapper">
+      <section class="swiper blog">
+        <div class="swiper-wrapper blog-container">
+          <article class="swiper-slide blog-article">
             <img
-              src="./public/blog/sofa.png"
-              alt="sofa"
-              class="blog-article-img"
+              src="./public/blog/blog-form.png"
+              alt="blog-form"
+              class="blog-article-form"
             />
-          </div>
-        </article>
-        <article class="blog-article">
-          <img
-            src="./public/blog/blog-form.png"
-            alt="blog-form"
-            class="blog-article-form"
-          />
-          <span class="article-id">02</span>
-          <h4 class="article-creator">Laura Busche</h4>
-          <h2 class="article-name">НОВАЯ КОЛЛЕКЦИЯ КРЕСЕЛ</h2>
-          <p class="article-date">14 января 2023</p>
-          <div class="reading-time">
-            <span>3</span>
-            <div>мин</div>
-          </div>
-          <div class="article-img-wrapper">
+            <span class="article-id">01</span>
+            <h4 class="article-creator">Laura Busche</h4>
+            <h2 class="article-name">НОВАЯ КОЛЛЕКЦИЯ КРЕСЕЛ</h2>
+            <p class="article-date">14 января 2023</p>
+            <div class="reading-time">
+              <span>3</span>
+              <div>мин</div>
+            </div>
+            <div class="article-img-wrapper">
+              <img
+                src="./public/blog/sofa.png"
+                alt="sofa"
+                class="blog-article-img"
+              />
+            </div>
+          </article>
+          <article class="swiper-slide blog-article">
             <img
-              src="./public/blog/sofa.png"
-              alt="sofa"
-              class="blog-article-img"
+              src="./public/blog/blog-form.png"
+              alt="blog-form"
+              class="blog-article-form"
             />
-          </div>
-        </article>
-        <article class="blog-article">
-          <img
-            src="./public/blog/blog-form.png"
-            alt="blog-form"
-            class="blog-article-form"
-          />
-          <span class="article-id">03</span>
-          <h4 class="article-creator">Laura Busche</h4>
-          <h2 class="article-name">НОВАЯ КОЛЛЕКЦИЯ КРЕСЕЛ</h2>
-          <p class="article-date">14 января 2023</p>
-          <div class="reading-time">
-            <span>3</span>
-            <div>мин</div>
-          </div>
-          <div class="article-img-wrapper">
+            <span class="article-id">02</span>
+            <h4 class="article-creator">Laura Busche</h4>
+            <h2 class="article-name">НОВАЯ КОЛЛЕКЦИЯ КРЕСЕЛ</h2>
+            <p class="article-date">14 января 2023</p>
+            <div class="reading-time">
+              <span>3</span>
+              <div>мин</div>
+            </div>
+            <div class="article-img-wrapper">
+              <img
+                src="./public/blog/sofa.png"
+                alt="sofa"
+                class="blog-article-img"
+              />
+            </div>
+          </article>
+          <article class="swiper-slide blog-article">
             <img
-              src="./public/blog/sofa.png"
-              alt="sofa"
-              class="blog-article-img"
+              src="./public/blog/blog-form.png"
+              alt="blog-form"
+              class="blog-article-form"
             />
-          </div>
-        </article>
-        <article class="blog-article">
-          <img
-            src="./public/blog/blog-form.png"
-            alt="blog-form"
-            class="blog-article-form"
-          />
-          <span class="article-id">04</span>
-          <h4 class="article-creator">Laura Busche</h4>
-          <h2 class="article-name">НОВАЯ КОЛЛЕКЦИЯ КРЕСЕЛ</h2>
-          <p class="article-date">14 января 2023</p>
-          <div class="reading-time">
-            <span>3</span>
-            <div>мин</div>
-          </div>
-          <div class="article-img-wrapper">
+            <span class="article-id">03</span>
+            <h4 class="article-creator">Laura Busche</h4>
+            <h2 class="article-name">НОВАЯ КОЛЛЕКЦИЯ КРЕСЕЛ</h2>
+            <p class="article-date">14 января 2023</p>
+            <div class="reading-time">
+              <span>3</span>
+              <div>мин</div>
+            </div>
+            <div class="article-img-wrapper">
+              <img
+                src="./public/blog/sofa.png"
+                alt="sofa"
+                class="blog-article-img"
+              />
+            </div>
+          </article>
+          <article class="swiper-slide blog-article">
             <img
-              src="./public/blog/blog-lamp.png"
-              alt="sofa"
-              class="blog-article-img"
+              src="./public/blog/blog-form.png"
+              alt="blog-form"
+              class="blog-article-form"
             />
-          </div>
-        </article>
-        <article class="blog-article">
-          <img
-            src="./public/blog/blog-form.png"
-            alt="blog-form"
-            class="blog-article-form"
-          />
-          <span class="article-id">05</span>
-          <h4 class="article-creator">Laura Busche</h4>
-          <h2 class="article-name">НОВАЯ КОЛЛЕКЦИЯ КРЕСЕЛ</h2>
-          <p class="article-date">14 января 2023</p>
-          <div class="reading-time">
-            <span>3</span>
-            <div>мин</div>
-          </div>
-          <div class="article-img-wrapper">
+            <span class="article-id">04</span>
+            <h4 class="article-creator">Laura Busche</h4>
+            <h2 class="article-name">НОВАЯ КОЛЛЕКЦИЯ КРЕСЕЛ</h2>
+            <p class="article-date">14 января 2023</p>
+            <div class="reading-time">
+              <span>3</span>
+              <div>мин</div>
+            </div>
+            <div class="article-img-wrapper">
+              <img
+                src="./public/blog/blog-lamp.png"
+                alt="sofa"
+                class="blog-article-img"
+              />
+            </div>
+          </article>
+          <article class="swiper-slide blog-article">
             <img
-              src="./public/blog/blog-lamp.png"
-              alt="sofa"
-              class="blog-article-img"
+              src="./public/blog/blog-form.png"
+              alt="blog-form"
+              class="blog-article-form"
             />
-          </div>
-        </article>
-        <article class="blog-article">
-          <img
-            src="./public/blog/blog-form.png"
-            alt="blog-form"
-            class="blog-article-form"
-          />
-          <span class="article-id">06</span>
-          <h4 class="article-creator">Laura Busche</h4>
-          <h2 class="article-name">НОВАЯ КОЛЛЕКЦИЯ КРЕСЕЛ</h2>
-          <p class="article-date">14 января 2023</p>
-          <div class="reading-time">
-            <span>3</span>
-            <div>мин</div>
-          </div>
-          <div class="article-img-wrapper">
+            <span class="article-id">05</span>
+            <h4 class="article-creator">Laura Busche</h4>
+            <h2 class="article-name">НОВАЯ КОЛЛЕКЦИЯ КРЕСЕЛ</h2>
+            <p class="article-date">14 января 2023</p>
+            <div class="reading-time">
+              <span>3</span>
+              <div>мин</div>
+            </div>
+            <div class="article-img-wrapper">
+              <img
+                src="./public/blog/blog-lamp.png"
+                alt="sofa"
+                class="blog-article-img"
+              />
+            </div>
+          </article>
+          <article class="swiper-slide blog-article">
             <img
-              src="./public/blog/blog-lamp.png"
-              alt="sofa"
-              class="blog-article-img"
+              src="./public/blog/blog-form.png"
+              alt="blog-form"
+              class="blog-article-form"
             />
-          </div>
-        </article>
-        <article class="blog-article">
-          <img
-            src="./public/blog/blog-form.png"
-            alt="blog-form"
-            class="blog-article-form"
-          />
-          <span class="article-id">07</span>
-          <h4 class="article-creator">Laura Busche</h4>
-          <h2 class="article-name">НОВАЯ КОЛЛЕКЦИЯ КРЕСЕЛ</h2>
-          <p class="article-date">14 января 2023</p>
-          <div class="reading-time">
-            <span>3</span>
-            <div>мин</div>
-          </div>
-          <div class="article-img-wrapper">
+            <span class="article-id">06</span>
+            <h4 class="article-creator">Laura Busche</h4>
+            <h2 class="article-name">НОВАЯ КОЛЛЕКЦИЯ КРЕСЕЛ</h2>
+            <p class="article-date">14 января 2023</p>
+            <div class="reading-time">
+              <span>3</span>
+              <div>мин</div>
+            </div>
+            <div class="article-img-wrapper">
+              <img
+                src="./public/blog/blog-lamp.png"
+                alt="sofa"
+                class="blog-article-img"
+              />
+            </div>
+          </article>
+          <article class="swiper-slide blog-article">
             <img
-              src="./public/blog/wardrobe.png"
-              alt="sofa"
-              class="blog-article-img"
+              src="./public/blog/blog-form.png"
+              alt="blog-form"
+              class="blog-article-form"
             />
-          </div>
-        </article>
-        <article class="blog-article">
-          <img
-            src="./public/blog/blog-form.png"
-            alt="blog-form"
-            class="blog-article-form"
-          />
-          <span class="article-id">08</span>
-          <h4 class="article-creator">Laura Busche</h4>
-          <h2 class="article-name">НОВАЯ КОЛЛЕКЦИЯ КРЕСЕЛ</h2>
-          <p class="article-date">14 января 2023</p>
-          <div class="reading-time">
-            <span>3</span>
-            <div>мин</div>
-          </div>
-          <div class="article-img-wrapper">
+            <span class="article-id">07</span>
+            <h4 class="article-creator">Laura Busche</h4>
+            <h2 class="article-name">НОВАЯ КОЛЛЕКЦИЯ КРЕСЕЛ</h2>
+            <p class="article-date">14 января 2023</p>
+            <div class="reading-time">
+              <span>3</span>
+              <div>мин</div>
+            </div>
+            <div class="article-img-wrapper">
+              <img
+                src="./public/blog/wardrobe.png"
+                alt="sofa"
+                class="blog-article-img"
+              />
+            </div>
+          </article>
+          <article class="swiper-slide blog-article">
             <img
-              src="./public/blog/wardrobe.png"
-              alt="sofa"
-              class="blog-article-img"
+              src="./public/blog/blog-form.png"
+              alt="blog-form"
+              class="blog-article-form"
             />
-          </div>
-        </article>
-        <article class="blog-article">
-          <img
-            src="./public/blog/blog-form.png"
-            alt="blog-form"
-            class="blog-article-form"
-          />
-          <span class="article-id">09</span>
-          <h4 class="article-creator">Laura Busche</h4>
-          <h2 class="article-name">НОВАЯ КОЛЛЕКЦИЯ КРЕСЕЛ</h2>
-          <p class="article-date">14 января 2023</p>
-          <div class="reading-time">
-            <span>3</span>
-            <div>мин</div>
-          </div>
-          <div class="article-img-wrapper">
+            <span class="article-id">08</span>
+            <h4 class="article-creator">Laura Busche</h4>
+            <h2 class="article-name">НОВАЯ КОЛЛЕКЦИЯ КРЕСЕЛ</h2>
+            <p class="article-date">14 января 2023</p>
+            <div class="reading-time">
+              <span>3</span>
+              <div>мин</div>
+            </div>
+            <div class="article-img-wrapper">
+              <img
+                src="./public/blog/wardrobe.png"
+                alt="sofa"
+                class="blog-article-img"
+              />
+            </div>
+          </article>
+          <article class="swiper-slide blog-article">
             <img
-              src="./public/blog/wardrobe.png"
-              alt="sofa"
-              class="blog-article-img"
+              src="./public/blog/blog-form.png"
+              alt="blog-form"
+              class="blog-article-form"
             />
-          </div>
-        </article>
+            <span class="article-id">09</span>
+            <h4 class="article-creator">Laura Busche</h4>
+            <h2 class="article-name">НОВАЯ КОЛЛЕКЦИЯ КРЕСЕЛ</h2>
+            <p class="article-date">14 января 2023</p>
+            <div class="reading-time">
+              <span>3</span>
+              <div>мин</div>
+            </div>
+            <div class="article-img-wrapper">
+              <img
+                src="./public/blog/wardrobe.png"
+                alt="sofa"
+                class="blog-article-img"
+              />
+            </div>
+          </article>
+        </div>
       </section>
     </main>
   </body>
