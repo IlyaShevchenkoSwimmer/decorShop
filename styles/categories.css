@@ -56,7 +56,7 @@
 
 .categories-container .made-for-order {
   max-width: 25%;
-  top: 42%;
+  top: 40%;
   left: 5%;
 }
 
@@ -73,7 +73,7 @@
   height: 14%;
   border-radius: 50%;
   transform: rotate(-22deg);
-  top: 29%;
+  top: 27%;
   right: -4%;
   background-color: rgb(250, 142, 239);
   font-family: "EuclidRegular";
