@@ -1,13 +1,30 @@
-.categories {
-  width: 100%;
-  margin-top: 100px;
-  position: relative;
+.categories-position {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 40px;
 }
 
-.categories > h2 {
-  text-align: center;
-  font-size: 2.5rem;
-  margin-bottom: 40px;
+.categories-slider {
+  width: 10%;
+  height: 1dvh;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 3px;
+}
+
+.categories-slider .categories-slider-position {
+  position: relative;
+  left: 0;
+  height: 1dvh;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 3px;
+}
+
+.categories {
+  width: 100%;
+  margin-top: 50px;
+  position: relative;
 }
 
 .categories-container {
