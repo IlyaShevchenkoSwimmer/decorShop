@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./styles/banner.css" />
     <link rel="stylesheet" href="./styles/categories.css" />
     <link rel="stylesheet" href="./styles/blog.css" />
+    <link rel="stylesheet" href="./styles/modals.css" />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
@@ -16,6 +17,7 @@
     <script defer src="./scripts/banner.js"></script>
     <script defer src="./scripts/categories.js"></script>
     <script defer src="./scripts/blog.js"></script>
+    <script defer src="./scripts/modals.js"></script>
     <script defer src="./scripts/index.js"></script>
     <title>Decor Shop</title>
   </head>
@@ -51,6 +53,24 @@
       </nav>
     </header>
     <main>
+      <section class="modal contacts-modal">
+        <article class="contacts-wrapper">
+          <div class="contacts-form">
+            <div class="contacts">
+              <div class="address">
+                <p>АДРЕС</p>
+                <h2>МОСКВА</h2>
+                <p>Улица такая-то, дом такой-то</p>
+              </div>
+              <div class="phone">
+                <p>ТЕЛЕФОН</p>
+                <h2>8 800 555 35 35</h2>
+              </div>
+            </div>
+            <div class="form-feedback"></div>
+          </div>
+        </article>
+      </section>
       <section class="banner">
         <article class="banner-card banner-lamp banner-card-active">
           <h4>ТОВАР ДНЯ</h4>
@@ -359,6 +379,36 @@
       <button class="load-more-goods">
         Загрузить еще<br /><span>&#8595;</span>
       </button>
+      <section class="modal single-good-modal">
+        <button class="close-button">ЗАКРЫТЬ<span>&#x2A2F;</span></button>
+        <button class="good-heart-button"><span>&#x2661;</span></button>
+        <h4 class="good-artikul">АРТ.GNM007</h4>
+        <div class="color-height">
+          <div class="good-color">
+            ЦВЕТ:
+            <div></div>
+            ЛАВАНДА
+          </div>
+          <h3 class="good-height">ВЫСОТА: 60см</h3>
+        </div>
+        <h1 class="manufacturer">BENJAMIN MOORE</h1>
+        <img src="./public/banner/lamp.png" alt="lamp" class="good-img" />
+        <div class="description-name-buybutton">
+          <p class="good-description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae
+            iusto porro, quasi vitae voluptatibus ullam at reiciendis voluptatum
+            similique asperiores.
+          </p>
+          <div class="name-price">
+            <h2 class="item-name">SANTA TRINITA</h2>
+            <h4 class="item-price">150 000</h4>
+          </div>
+          <button class="good-buy-button">
+            <img src="./public/header/cart.png" alt="cart" />
+            <span>Купить</span>
+          </button>
+        </div>
+      </section>
       <img
         src="./public/creatingAGreatArt.png"
         alt="creatingAGreatArt"
