@@ -20,7 +20,7 @@ body {
   margin-top: 20px;
 }
 
-.swiper {
+.categories-swiper {
   width: 100%;
 }
 
@@ -36,4 +36,9 @@ img {
   -moz-user-select: none;
   -webkit-user-select: none;
   -ms-user-select: none;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 30px;
 }
