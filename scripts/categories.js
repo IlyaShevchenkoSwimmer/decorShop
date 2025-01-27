@@ -68,6 +68,36 @@ categoryItems.forEach((category) => {
     goodModal.style.opacity = "1";
     goodModal.style.zIndex = "250";
   };
+  category.children[4].children[1].onclick = () => {
+    const cart = document
+      .getElementsByClassName("cart-button")[0]
+      .getBoundingClientRect();
+    category.children[1].animate(
+      [
+        {},
+        {
+          left: `${cart.x - category.offsetLeft}px`,
+          top: `${cart.y - category.offsetHeight / 2}px`,
+          scale: "0",
+          opacity: "0",
+        },
+        {
+          left: `0`,
+          top: `0`,
+          scale: "0",
+          opacity: "0",
+        },
+        {
+          scale: "1",
+          opacity: "1",
+        },
+      ],
+      {
+        duration: 1500,
+        iterations: 1,
+      }
+    );
+  };
 });
 
 const closeButton = document.querySelectorAll(".close-button");

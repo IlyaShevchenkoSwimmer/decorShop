@@ -19,17 +19,10 @@ banners.forEach((banner) => {
       [
         {},
         {
-          left: `${cart.x - banner.offsetLeft}px`,
-          top: `${cart.y - banner.offsetHeight / 2}px`,
           scale: "0",
           opacity: "0",
         },
-        {
-          left: `0`,
-          top: `0`,
-          scale: "0",
-          opacity: "0",
-        },
+
         {
           scale: "1",
           opacity: "1",

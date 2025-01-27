@@ -179,8 +179,8 @@
 }
 
 .contacts-modal {
-  opacity: 1;
-  z-index: 250;
+  opacity: 0;
+  z-index: -20;
   background-color: rgb(174, 151, 232);
 }
 
@@ -190,39 +190,132 @@
   left: 5%;
   height: 90%;
   top: 5%;
-  outline: 1px solid red;
   border-radius: 50px;
+  display: flex;
+  flex-direction: column;
 }
 
 .contacts-form {
-  outline: 1px solid red;
   height: 45%;
   border-radius: 50px 50px 0 0;
+  display: flex;
 }
 
 .contacts {
   display: flex;
   height: 100%;
-  width: 50%;
+  width: 60%;
+  background-color: rgb(191, 168, 245);
+  border-radius: 50px 0 0 0;
 }
 
 .contacts .address {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   height: 100%;
   padding-left: 6%;
-  width: 50%;
+  width: 60%;
+  margin-top: 5%;
+}
+
+.contacts .address h2 {
+  font-size: 2rem;
+}
+
+.contacts .address p:first-child {
+  color: rgba(255, 255, 255, 0.5);
 }
 
 .contacts .phone {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   height: 100%;
   width: 50%;
+  margin-top: 5%;
+}
+
+.contacts .phone p:first-child {
+  color: rgba(255, 255, 255, 0.5);
 }
 
 .contacts .phone h2 {
   font-family: "Floreste";
+}
+
+.form-feedback {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(250, 142, 239);
+  border-radius: 0 50px 0 0;
+}
+
+.form-feedback h4 {
+  margin-top: 5%;
+  padding-left: 5%;
+  color: rgba(255, 255, 255, 0.5);
+  align-self: flex-start;
+}
+
+.form-feedback form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.form-feedback form input:not(.submit-button) {
+  margin-top: 3%;
+  color: white;
+  font-family: "EuclidRegular";
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid rgb(218, 255, 90);
+  width: 90%;
+}
+
+.form-feedback form input::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.form-feedback form input:active {
+  outline: 2px solid rgba(255, 255, 255, 0.5);
+}
+
+.form-feedback form input:focus {
+  outline: 2px solid rgba(255, 255, 255, 0.5);
+}
+
+.submit-button {
+  width: 35%;
+  height: 40%;
+  border: 1px solid rgb(218, 255, 90);
+  border-radius: 50%;
+  margin-top: 5%;
+  margin-left: 5%;
+  color: white;
+  font-family: "EuclidRegular";
+  background-color: transparent;
+  transition: background-color 0.3s ease-in-out;
+  align-self: flex-start;
+}
+
+.submit-button:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  cursor: pointer;
+}
+
+.contacts-map {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  border-radius: 0 0 50px 50px;
+}
+
+.contacts-map iframe {
+  width: 100%;
+  border-radius: 0 0 50px 50px;
 }
