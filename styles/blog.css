@@ -53,7 +53,7 @@
 
 .blog-article .article-date {
   position: absolute;
-  bottom: 18%;
+  bottom: 20%;
   left: 4%;
   width: 20%;
 }
@@ -119,4 +119,33 @@
 
 .blog-position h1 {
   margin-left: 30px;
+}
+
+@media (max-width: 1240px) {
+  .blog-article {
+    width: 49%;
+    min-width: 49%;
+  }
+  .blog-container {
+    gap: calc(1%);
+  }
+}
+
+@media (max-width: 780px) {
+  .blog-article {
+    width: 99%;
+    min-width: 99%;
+  }
+  .blog-container {
+    gap: calc(1%);
+  }
+}
+
+@media (max-width: 420px) {
+  .blog-article .article-name {
+    font-size: 1rem;
+  }
+  .blog-article .article-date {
+    font-size: 0.7rem;
+  }
 }
