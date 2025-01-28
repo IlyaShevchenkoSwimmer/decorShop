@@ -378,13 +378,35 @@
     border-radius: 50px 50px 0 0;
   }
 
+  .contacts .address h2 {
+    font-size: 1rem;
+  }
+
+  .contacts p {
+    font-size: 0.8rem;
+  }
+
   .address {
     width: 100%;
   }
-  .phone {
+  .contacts .phone {
     width: 100%;
     margin-left: 5%;
+    margin-top: 2%;
   }
+
+  .contacts .phone h2 {
+    font-size: 1rem;
+  }
+
+  .contacts h2 {
+    margin-top: 0;
+  }
+
+  .contacts p {
+    margin-top: 0;
+  }
+
   .form-feedback {
     width: 100%;
     border-radius: 0;

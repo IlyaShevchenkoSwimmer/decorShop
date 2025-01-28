@@ -26,11 +26,15 @@
       <nav class="navigation-bar">
         <img src="./public/logo.png" alt="logo" class="logo" />
         <button class="header-button katalog-button">
-          <img src="./public/header/katalog.png" alt="katalog" />
-          <span>Каталог</span>
+          <a href="#categories">
+            <img src="./public/header/katalog.png" alt="katalog" />
+            <span>Каталог</span></a
+          >
         </button>
         <div class="blog-contacts">
-          <button class="header-button blog-button"><span>Блог</span></button>
+          <button class="header-button blog-button">
+            <a href="#blog"><span>Блог</span></a>
+          </button>
           <button class="header-button contacts-button">
             <span>Контакты</span>
           </button>
@@ -177,7 +181,7 @@
         </article>
       </section>
 
-      <h1>КАТЕГОРИИ</h1>
+      <h1 id="categories">КАТЕГОРИИ</h1>
 
       <section class="swiper categories-swiper categories">
         <div class="swiper-scrollbar"></div>
@@ -462,7 +466,7 @@
         class="creatingAGreatArt"
       />
 
-      <h1>БЛОГ</h1>
+      <h1 id="blog">БЛОГ</h1>
 
       <section class="swiper blog-swiper blog">
         <div class="swiper-scrollbar"></div>
