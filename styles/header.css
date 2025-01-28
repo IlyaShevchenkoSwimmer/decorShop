@@ -89,8 +89,8 @@ header {
   }
 
   .heart-profile-cart {
-    position: relative;
-    right: -22%;
+    position: absolute;
+    right: 4%;
     padding-right: 0;
     width: 10%;
   }
