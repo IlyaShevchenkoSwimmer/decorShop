@@ -4,11 +4,15 @@
   left: 0;
   height: 100dvh;
   width: 100%;
+  background-color: rgb(174, 151, 232);
+  overflow: hidden;
 }
 
 .single-good-modal {
   z-index: -20;
   opacity: 0;
+  width: 100%;
+  height: 100%;
   background-color: rgb(174, 151, 232);
   display: flex;
   flex-direction: column;
@@ -111,7 +115,6 @@
   margin: 0;
   padding: 0;
 }
-
 .description-name-buybutton .name-price {
   font-family: "Floreste";
   width: 50%;
@@ -318,4 +321,40 @@
 .contacts-map iframe {
   width: 100%;
   border-radius: 0 0 50px 50px;
+}
+
+@media (max-width: 750px) {
+  .description-name-buybutton {
+    flex-direction: column;
+    align-items: center;
+  }
+  .good-description {
+    width: 100%;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    padding-bottom: 10px;
+  }
+
+  .good-buy-button {
+    width: 50% !important;
+    height: 10vh !important;
+    margin-top: 2%;
+  }
+
+  .name-price {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100% !important;
+    bottom: 30dvh;
+  }
+  .good-heart-button {
+    width: 7vw;
+    height: 7vw;
+  }
+
+  .good-description {
+    font-size: 0.7rem !important;
+  }
 }
