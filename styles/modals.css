@@ -2,8 +2,10 @@
   position: fixed;
   top: 0;
   left: 0;
-  height: 100dvh;
-  width: 100%;
+  height: 100%;
+  width: calc(100% - 8px);
+  min-width: inherit;
+  max-width: inherit;
   background-color: rgb(174, 151, 232);
   overflow: hidden;
 }
@@ -11,7 +13,6 @@
 .single-good-modal {
   z-index: -20;
   opacity: 0;
-  width: 100%;
   height: 100%;
   background-color: rgb(174, 151, 232);
   display: flex;
@@ -182,7 +183,6 @@
 }
 
 .contacts-modal {
-  width: 100%;
   height: 100%;
   opacity: 0;
   z-index: -20;
@@ -383,6 +383,7 @@
   }
   .phone {
     width: 100%;
+    margin-left: 5%;
   }
   .form-feedback {
     width: 100%;

@@ -141,7 +141,7 @@ function switchOnMobileBlog() {
 
 switchOnMobileBlog();
 
-window.onchange = () => {
+window.onresize = () => {
   switchOnMobileCategories();
   switchOnMobileBlog();
 };

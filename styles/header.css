@@ -66,3 +66,40 @@ header {
 .heart-profile-cart .header-button {
   margin-left: 7px;
 }
+
+@media (max-width: 750px) {
+  .logo {
+    width: 14%;
+  }
+  .katalog-button {
+    visibility: hidden;
+    width: 0;
+  }
+
+  .blog-contacts {
+    right: -1%;
+  }
+
+  .search-button span {
+    visibility: hidden;
+    width: 0;
+  }
+  .search-button {
+    right: -3%;
+  }
+
+  .heart-profile-cart {
+    position: relative;
+    right: -22%;
+    padding-right: 0;
+    width: 10%;
+  }
+
+  .heart-profile-cart .header-button {
+    margin-left: 0;
+  }
+
+  .navigation-bar .header-button img {
+    width: 1.2rem;
+  }
+}

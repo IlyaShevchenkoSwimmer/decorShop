@@ -8,10 +8,21 @@
   src: url("../public/fonts/EuclidRegular.ttf");
 }
 
+html {
+  overflow-x: hidden;
+}
+
 body {
   background-color: rgb(174, 151, 232);
   font-family: "EuclidRegular";
   color: white;
+  overflow-x: hidden;
+  margin: 8px;
+}
+
+main {
+  position: relative;
+  width: 100%;
   overflow-x: hidden;
 }
 
